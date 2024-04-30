@@ -6,34 +6,32 @@ import random
 Row = int(input("Enter the number of rows:"))
 Column = int(input("Enter the number of columns:"))
  
-# Initialize matrix
+# create matrix1
 matrix1 = []
-
-# A for loop for row entries
 print("matrix1:", end ="\n")
 for row in range(Row):    
-    a = []
+    temp = []
     # A for loop for column entries
     for column in range(Column):   
-        a.append(random.randint(1, 9))
-    matrix1.append(a)
+        temp.append(random.randint(1, 3))
+    matrix1.append(temp)
  
-# For printing the matrix
+# print matrix1
 for row in range(Row):
     for column in range(Column):
         print(matrix1[row][column], end=" ")
     print()
 
+#create matrix2
 matrix2 = []
-
 for row in range(Row):    
-    a = []
+    temp = []
     # A for loop for column entries
     for column in range(Column):   
-        a.append(random.randint(1, 9))
-    matrix2.append(a)
+        temp.append(random.randint(1, 3))
+    matrix2.append(temp)
  
-# For printing the matrix
+#print matrix2
 print("matrix2:", end ="\n")
 for row in range(Row):
     for column in range(Column):
@@ -41,31 +39,27 @@ for row in range(Row):
     print()
 
 
+#Algorithm1 Iterative Approach
+result_matrix1 = []
+total = 0
+for i in range(len(matrix1)):
+    temp = []
+    for j in range(len(matrix2[0])):
+        for k in range(len(matrix2)):
+            total += matrix1[i][k] * matrix2[k][j]
+        temp.append(total)  
+        total = 0  
+    result_matrix1.append(temp)    
 
-#Alorithm 1 - Iterative Approach
-#def iterative_algorithm(matrix1, matrix2):
-
-result_matrix = []
-
-for row in range(Row):
-    a = []
-    for column in range(Column):
-        a.append(matrix1[row][column]*matrix2[row][column])
-    result_matrix.append(a)    
-     
-
-
-
+#print Algorithm1 result matrix
 print("result matrix:", end ="\n")
 for row in range(Row):
     for column in range(Column):
-        print(result_matrix[row][column], end=" ")
+        print(result_matrix1[row][column], end=" ")
     print()
-
 
 
 #Algorithm 2
 
 
-#Algorithm 3
 
