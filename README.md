@@ -15,12 +15,6 @@ After implementing the two algorithms and testing them on various sized matrices
 
 I ran the program in the terminal by typing: python3 ./CSPB2270_Final_Project.py
 
-My results from running the program are below:
-
-
-My results from running the program are below:
-
-
 I’ve looked into why this might be the case and have found a couple of possibilities. One is that I haven’t tested big enough matrices to see the difference yet, but I’ve also seen that Strassen should begin to be faster around n = 500 to n = 1,000. Doing some quick math, the chart below shows how many times longer it takes to complete the next calculation. It’s not clear if the iterative approach was growing at a faster rate.
 
 
