@@ -273,16 +273,4 @@ print("fin")
 
 
 
-####To DO#####
-# containerize functions: print, create matrix
 
-# show time of two functions
-
-# Challenges:
-# creating the iterative algorithm and strassen algorithm by hand. keeping track of what was happening in each for loop was brain melty
-# talk about the other algorithms added
-# also just keeping the flow of the project organized with functions was challenging. I just jumped in using the print method and generate matrix methods, without putting them in a functions 
-# and then I lost track when I was copy and pasting for testing. It became difficult to manage
-
-# https://github.com/hardianlawi/algorithm-implementation/blob/master/src/multiplication/strassenAlgorithm.py
-# https://www.geeksforgeeks.org/strassens-matrix-multiplication/
